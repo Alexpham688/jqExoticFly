@@ -1,0 +1,128 @@
+body {
+  background-color: #909090;
+}
+@font-face {
+  font-family: 'imagine_font';
+  src:url('../css/imagine_font/imagine_font.otf');
+}
+@font-face {
+  font-family: 'digital_desolation_plus';
+  src:url('../css/digital_desolation_plus/Digital-Desolation-Plus.otf');
+}
+
+
+header {
+  width: 900px;
+  padding: 7px 2px;
+  background: #e7e7e7;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'digital_desolation_plus';
+  src:url('../css/digital_desolation_plus/Digital-Desolation-Plus.otf');
+}
+nav{
+  width: 86%;
+  height: 10px;
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'imagine_font';
+  src:url('../css/imagine_font/imagine_font.otf');
+  color: #eee;
+
+}
+nav li  {
+  float: left;
+  display: inline-block;
+  font-size: 1.2em;
+  margin-left: 40px;
+  cursor: pointer;
+  color: #eee;
+  margin-left: 46px;
+}
+nav li a {
+  color: #eee;
+  padding:0 3px 0 3px;
+  margin-left: 50px;
+}
+nav li a:hover {
+  color: #D55D00;
+  -webkit-transition:0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+#shopping-cart {
+  display: inline-block;
+  float: right;
+}
+.glyphicon-shopping-cart {
+  font-size: 1.6em;
+  float: right;
+  margin-top: -25px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+#container {
+  height: auto;
+  width: auto;
+  border: 1px solid #eee;
+  background: #333;
+
+}
+.single-item img{
+  width: 180px;
+  height: 110px;
+  margin-bottom: 30px;
+  display: block;
+  padding: 1px;
+  border: 1px solid #000;
+}
+.single-item {
+  display: inline-block;
+  float: left;
+  padding: 10px 7px;
+  font-family: 'imagine_font';
+  src:url('..css/imagine_font/imagine_font.otf');
+  background: #fff;
+  width: 195px;
+  height: 260px;
+  border: 1px solid #eee;
+  margin-left: 10px;
+  margin-bottom:20px;
+}
+.items {
+  margin: 0 auto;
+  width: 1250px;
+  height: 830px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+button {
+  border: 1px solid #394F79;
+  padding: 4px 14px;
+  background: #fff;
+  color: #394F79;
+  text-transform: uppercase;
+  float: right;
+  margin: 5px 0;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background: #ccc;
+  color: #D55D00;
+  -webkit-transition:0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+footer {
+  padding: 10px 10px;
+  background: #ddd;
+  text-align: center;
+
+}
+h3 {
+  border-bottom: 2px solid #ccc;
+}
