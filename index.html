@@ -12,8 +12,19 @@
     <div id="container">
       <header>
         <h1>Exotic Cars</h1>
-        <span><i id="shopping-cart" class="glyphicon glyphicon-shopping-cart"></i></span>
+      <i id="shopping-cart" class="glyphicon glyphicon-shopping-cart"></i>
+        <button id="empty-cart">Empty</button>
+        <span id="itemCount"></span>
       </header>
+      <!-- shopping cart -->
+      <div id="shop-cart">
+        <div id="cart-items">
+          <h3>items in cart</h3>
+          <i id="close-btn"class="glyphicon glyphicon-remove-circle"></i>
+          <div id="cartItems"></div>
+          <span id="cartTotal"></span>
+        </div>
+      </div>
       <nav>
         <ul>
           <li><a href="#"class="exotics">All Exotics</a></li>
@@ -28,28 +39,32 @@
         <div class="single-item italy">
           <a href="#" data-toggle="tooltip" data-placement="top" title=" 2014 Pagani Huayra V12 twin-turbo engine developed by Mercedes-AMG. 6.0-litre engine, the M158, produces 730 PS (720 hp, 539 kW) and 738 lb. ft (1,000 N. <img src='img/pagani_silver.jpg'>"><img src="img/pagani_silver.jpeg" alt="Pagani Huayra"></a>
             <h3>Pagani</h3>
-          <p>Price: <em>$</em> 1,400,000.00
+          <p class="item-text">Pagani <br/>Huayra</p>
+          <p class='price'>Price: <em>$</em> 1,400,000.00
           </p>
           <button type="button" class="add-cart">Add to cart</button>
         </div>
         <div class="single-item germany">
           <a href="#" data-toggle="tooltip" data-placement="top" title=" 2105 Porsche 918 Spyder. Engine	4.6-Liter V-8 W/ Two Electric Parallel Motors Top Speed (Hybrid/Electric	211 mph / 93 mph."><img src="img/porsche_silver.jpg" alt="Porsche 918 "></a>
             <h3>Porsche</h3>
-            <p>Price:<em>$</em> 850,000.00
+          <p class="item-text">Porsche <br/>918 Spyder</p>
+          <p class='price'>Price:<em>$</em> 850,000.00
           </p>
           <button type="button" class="add-cart">Add to cart</button>
         </div>
         <div class="single-item italy">
           <a href="#" data-toggle="tooltip" data-placement='top'title="2017 Lamborghini Centenario 6.5-liter V12, but it's been tweaked to deliver 770 horsepower — up from 690 — and rev all the way up to 8,600 rpm. As a result, the Centenario hits 60 mph from a stop in just 2.8 sec.”"><img src="img/lamborghini_centenario.jpg" alt="lamborghini centenario"></a>
             <h3>Lamborghini</h3>
-            <p>Price: <em>$</em> 1,900,000.00
-            </p>
-            <button type="button" class="add-cart">Add to cart</button>
+          <p class="item-text">Lamborghini <br/>Centenario</p>
+          <p class='price'>Price: <em>$</em> 1,900,000.00
+          </p>
+          <button type="button" class="add-cart">Add to cart</button>
         </div>
         <div class="single-item japan">
           <a href="#" data-toggle="tooltip" data-placement='top'title="2017 Acura NSX, 573 hp and 476 lb-ft of torque at its disposal, the second-generation NSX will get to 60 mph in about 3.0 seconds, top speed of 191 mph."><img src="img/acura_silver.jpg" alt="silver acura nsx"></a>
             <h3>Acura</h3>
-          <p>Price: <em>$</em> 160,000.00
+          <p class="item-text">Acura <br/>NSX</p>
+          <p class='price'>Price: <em>$</em> 160,000.00
           </p>
           <button type="button" class="add-cart">Add to cart</button>
         </div>
@@ -58,42 +73,40 @@
           <a href="#" data-toggle='tooltip' data-placement="top" title="2015 Audi R8 V-10 540 @ 7,800. Torque (lb-ft @ rpm)398 @ 6,500. Top Speed.
           198 mph 9 Transmission. 3.5 seconds. Valvetrain."><img src="img/audi_white.jpg" alt="yellow ferrari"></a>
             <h3>Audi</h3>
-          <p>Price:<em>$</em> 163,000.00
+          <p class="item-text">Audi <br/>R8</p>
+          <p class='price'>Price:<em>$</em> 163,000.00
           </p>
           <button type="button" class="add-cart">Add to cart</button>
         </div>
         <div class="single-item germany">
           <a href="#" data-toggle="tooltip" data-placement="top" title="2017 BMW i8 is a 1.5-liter turbo-three coupled to three electric motors for a combined output of 357 hp and 420 lb-ft of torque. The i8 is able to travel up to 15 miles,or 76 mpg-e"><img src='img/bmw_silver.jpg' alt="Bmw i8"></a>
             <h3>BMW</h3>
-          <p>Price: <em>$</em> 145,000.00
+          <p class="item-text">BMW <br/>i8</p>
+          <p class='price'>Price: <em>$</em> 145,000.00
           </p>
           <button type="button" class="add-cart">Add to cart</button>
         </div>
-        <div class="single-item england">
-          <a href="#" data-toggle="tooltip"data-placement='top'title="2015 Aston Martin Vanquish equipped with AM29 V12 engine – the most powerful GT production engine in Aston Martin history. 568 bhp of power. 201 mph top speed. 0-60mph in just 3.6 secs."><img src="img/vanquish_copper.jpg" alt="copper aston martin vanquish"></a>
-            <h3>AstonMartin</h3>
-          <p>Price: <em>$</em> 288,000.00
-          </p>
-          <button type="button" class="add-cart">Add to cart</button>
-        </div>
-        <div class='single-item japan'>
-          <a href="#"data-toggle="tooltip"data-placement="top"title="2015 Nissan GTR has 591 hp and Torque to 481 lb-ft. Top speed at 196 mph (315.43 km/h) and the gear ratios in the DCT transmission."><img src="img/nissan_copper.jpg" alt="Nissan GTR copper"></a>
-            <h3>Nissan</h3>
-          <p>Price: <em>$</em> 110,000.00
+        <div class='single-item america'>
+          <a href="#" data-toggle='tooltip'data-placement="top"title=" 2016 Hennessey Venom F5 7.0 liter V8 twin turbochargers power at 1500hp @7200 rpm. 0-60 @ 2.4 sec. Top speed 290 mph. 0-100 @ 4.4 sec. "><img src="img/venom_grey.jpg" alt="Hennessey Venom GT red"></a>
+            <h3>Hennessey</h3>
+          <p class="item-text">Hennessey<br/> Venom F5</p>
+          <p class='price'>Price: <em>$</em> 1,200,000.00
           </p>
           <button type="button" class="add-cart">Add to cart</button>
         </div>
         <div class="single-item italy">
           <a href="#" data-toggle="tooltip" data-placement='top'title="2013 Ferrari LaFerrari's mid-mounted 6.3-litre V12 engine is electrically assisted by Ferrari's HY-KERS system to deliver a total power output of 950bhp. Top speed of 227mph a realistic posibility and to see the car past 62mph in under 3 sec."><img src="img/ferrari_red.jpg" alt="red ferrari"></a>
-            <h3>Ferrari</h3>
-          <p>Price: <em>$</em> 7,000,000.00
+            <h3>Ferrari</h3>Ferrari <br/>LaFerrari
+          <p class="item-text"></p>
+          <p class='price'>Price: <em>$</em> 7,000,000.00
           </p>
           <button type="button" class="add-cart">Add to cart</button>
         </div>
         <div class='single-item england'>
           <a href="#" data-toggle='tooltip'data-placement="top"title=" 2013 Jaguar C-X75 1.6-litre turbocharged and supercharged 4-cyl, 500bhp @ 9700rpm (est), 277lb ft @ 3000-7000rpm (est), plus twin 195bhp/295lb ft electric motors and 19kWh lithium-ion battery pack"><img src="img/jaguar_silver.jpg" alt="Jaguar C-X75 silver"></a>
             <h3>Jaguar</h3>
-          <p>Price: <em>$</em> 1,480,000.00
+          <p class="item-text">Jaguar <br/> C-X75</p>
+          <p class='price'>Price: <em>$</em> 1,480,000.00
           </p>
           <button type="button" class="add-cart">Add to cart</button>
         </div>
@@ -101,59 +114,28 @@
           <a href="#" data-toggle='tooltip'data-placement="top"title="2014 Lexus LFA with 4.8-liter V-10 engine codeveloped with Yamaha. DISPLACEMENT: 293 cu in, 4805 cc.POWER: 553 bhp @ 8700 rpm.
           TORQUE: 354 lb-ft @ 6800 rpm"><img src="img/lexus_grey.jpg" alt="Lexus LFA silver"></a>
             <h3>Lexus</h3>
-          <p>Price: <em>$</em> 350,000
+          <p class="item-text">Lexus <br/>LFA</p>
+          <p class='price'>Price: <em>$</em> 350,000
           </p>
           <button type="button" class="add-cart">Add to cart</button>
         </div>
         <div class='single-item england'>
           <a href="#" data-toggle='tooltip'data-placement="top"title="2014 McLaren P1 twin-turbocharged and intercooled DOHC 32-valve 3.8-liter V-8, 727 hp, 531 lb-ft; AC permanent-magnet synchronous electric motor, 177 hp, 96 lb-ft; combined system, 903 hp"><img src="img/mclaren_orange.jpg" alt="McLaren P1 orange"></a>
             <h3>McLaren</h3>
-          <p>Price: <em>$</em> 1,150,000.00
+          <p class="item-text">McLaren <br/>P1</p>
+          <p class='price'>Price: <em>$</em> 1,150,000.00
           </p>
           <button type="button" class="add-cart">Add to cart</button>
         </div>
-        <div class='single-item england'>
-          <a href="#" data-toggle='tooltip'data-placement="top"title="2014 McLaren P1 twin-turbocharged and intercooled DOHC 32-valve 3.8-liter V-8, 727 hp, 531 lb-ft; AC permanent-magnet synchronous electric motor, 177 hp, 96 lb-ft; combined system, 903 hp"><img src="img/mclaren_orange.jpg" alt="McLaren P1 orange"></a>
-            <h3>McLaren</h3>
-          <p>Price: <em>$</em> 1,150,000.00
+        <div class='single-item america'>
+          <a href="#" data-toggle='tooltip'data-placement="top"title="2016 Dodge Viper GT 20-valve V-10 engine with 645 HP @ 6200 rpm. 600lb-ft torque @ 5000 rpm. 6-speed manual transmission. 0-60 3.4 sec.0-100 7.3 sec. Top speed 190 mph. "><img src="img/viper_silver.jpg" alt="Dodge Viper gt silver"></a>
+            <h3>Dodge</h3>
+          <p class-'item-text'>Dodge<br/> Viper Gt</p>
+          <p class='price'>Price: <em>$</em> 126,000.00
           </p>
           <button type="button" class="add-cart">Add to cart</button>
         </div>
-        <div class='single-item england'>
-          <a href="#" data-toggle='tooltip'data-placement="top"title="2014 McLaren P1 twin-turbocharged and intercooled DOHC 32-valve 3.8-liter V-8, 727 hp, 531 lb-ft; AC permanent-magnet synchronous electric motor, 177 hp, 96 lb-ft; combined system, 903 hp"><img src="img/mclaren_orange.jpg" alt="McLaren P1 orange"></a>
-            <h3>McLaren</h3>
-          <p>Price: <em>$</em> 1,150,000.00
-          </p>
-          <button type="button" class="add-cart">Add to cart</button>
-        </div>
-        <div class='single-item england'>
-          <a href="#" data-toggle='tooltip'data-placement="top"title="2014 McLaren P1 twin-turbocharged and intercooled DOHC 32-valve 3.8-liter V-8, 727 hp, 531 lb-ft; AC permanent-magnet synchronous electric motor, 177 hp, 96 lb-ft; combined system, 903 hp"><img src="img/mclaren_orange.jpg" alt="McLaren P1 orange"></a>
-            <h3>McLaren</h3>
-          <p>Price: <em>$</em> 1,150,000.00
-          </p>
-          <button type="button" class="add-cart">Add to cart</button>
-        </div>
-        <div class='single-item england'>
-          <a href="#" data-toggle='tooltip'data-placement="top"title="2014 McLaren P1 twin-turbocharged and intercooled DOHC 32-valve 3.8-liter V-8, 727 hp, 531 lb-ft; AC permanent-magnet synchronous electric motor, 177 hp, 96 lb-ft; combined system, 903 hp"><img src="img/mclaren_orange.jpg" alt="McLaren P1 orange"></a>
-            <h3>McLaren</h3>
-          <p>Price: <em>$</em> 1,150,000.00
-          </p>
-          <button type="button" class="add-cart">Add to cart</button>
-        </div>
-        <div class='single-item england'>
-          <a href="#" data-toggle='tooltip'data-placement="top"title="2014 McLaren P1 twin-turbocharged and intercooled DOHC 32-valve 3.8-liter V-8, 727 hp, 531 lb-ft; AC permanent-magnet synchronous electric motor, 177 hp, 96 lb-ft; combined system, 903 hp"><img src="img/mclaren_orange.jpg" alt="McLaren P1 orange"></a>
-            <h3>McLaren</h3>
-          <p>Price: <em>$</em> 1,150,000.00
-          </p>
-          <button type="button" class="add-cart">Add to cart</button>
-        </div>
-        <div class='single-item england'>
-          <a href="#" data-toggle='tooltip'data-placement="top"title="2014 McLaren P1 twin-turbocharged and intercooled DOHC 32-valve 3.8-liter V-8, 727 hp, 531 lb-ft; AC permanent-magnet synchronous electric motor, 177 hp, 96 lb-ft; combined system, 903 hp"><img src="img/mclaren_orange.jpg" alt="McLaren P1 orange"></a>
-            <h3>McLaren</h3>
-          <p>Price: <em>$</em> 1,150,000.00
-          </p>
-          <button type="button" class="add-cart">Add to cart</button>
-        </div>
+
         <!--single-item-->
       </div>
       <!--items-->
@@ -166,9 +148,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <!-- <script src="js/lightbox-plus-jquery.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- <script src="js/lightbox.min.js"></script> -->
+
     <script src="js/app.js"></script>
 
   </body>
