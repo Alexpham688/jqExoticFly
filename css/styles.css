@@ -50,7 +50,11 @@ nav li a:hover {
   -webkit-transition:0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-
+#itemCount {
+  float: right;
+  margin-top: -23px;
+  margin-right: 40px;
+}
 #shopping-cart {
   display: inline-block;
   float: right;
@@ -59,7 +63,7 @@ nav li a:hover {
   font-size: 1.6em;
   float: right;
   margin-top: -25px;
-  margin-right: 20px;
+  margin-right: 10px;
   display: inline-block;
 }
 
@@ -131,9 +135,6 @@ footer {
 h3 {
   border-bottom: 2px solid #ccc;
 }
-/*.single-item p {
-  margin-top: 20px;
-}*/
 #empty-cart {
   margin-right: -120px;
   margin-top: -30px;
@@ -146,7 +147,6 @@ h3 {
   position:absolute;
   z-index: 9999;
   margin-left: 70px;
-
   background: rgba(0,0,0, 0.6);
 }
 #shopping-cart:hover {

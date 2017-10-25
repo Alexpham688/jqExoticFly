@@ -21,36 +21,9 @@ $(function(){
   //adding tooltip
   $('[data-toggle="tooltip"]').tooltip();
 
-  var itemCount = 0;
-  var priceTotal = 0;
-  //open shopping cart
-  $('#shopping-cart').on('click',function(){
-    $('#shop-cart').fadeToggle(300);
-  });
-  //close shopping cart
-  var close = $('.glyphicon-remove-circle');
-  $('#close-btn').on('click', function(){
-    $('#shop-cart').fadeToggle(300);
-  });
-  //empty shopping cart
-  $('#empty-cart').on('click', function() {
-    itemCount = 0;
-    priceTotal = 0;
-  })
+
   //adding on click function to button
-
-
-  $('.add-cart').on('click', function(){
-  itemCount ++;
-    $(this).text(itemCount).css("display", 'block');
-    //adding a remove button
-    $(this).siblings().clone().appendTo('#cartItems').append('<button class="removeItem">Remove</button>');
-
-    //calculating price
-    var price = parseInt($(this).siblings().find('.price').text());
-    priceTotal += price;
-    $('#cartTotal').text("Total: $" + priceTotal);
-
+$('.add-cart').on('click', function(){
     var cart = $('#shopping-cart');
 
     //targeting each image seperately
